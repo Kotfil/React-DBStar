@@ -1,35 +1,6 @@
-const getResource = async (url) => {
-    const res = await fetch(url);
-    const body = await res.json();
-    return body;
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/app';
 
-
-getResource('https://swapi.co/api/people/1/')
-.then((body) => {
-    console.log(body);
-})
-.catch((err) => {
-    console.error('Cloud not fetch',err);
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// fetch('https://swapi.co/api/people/1/')
-// .then((res) => {
-//    return res.json();
-// })
-// .then((body) => {
-//     console.log(body);
-// });
+ReactDOM.render(<App />,
+  document.getElementById('root'));
