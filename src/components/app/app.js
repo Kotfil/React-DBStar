@@ -22,6 +22,8 @@ export default class App extends Component {
     });
   };
 
+  //coment
+
   onPersonSelected = (id) => {
     this.setState({
       selectedPerson: id
