@@ -21,6 +21,8 @@ export default class RandomPlanet extends Component {
     // clearInterval(this.interval);
   }
 
+
+
   onPlanetLoaded = (planet) => {
     this.setState({
       planet,
@@ -93,6 +95,3 @@ const PlanetView = ({ planet }) => {
     </React.Fragment>
   );
 };
-
-
-
