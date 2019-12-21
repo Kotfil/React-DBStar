@@ -21,7 +21,6 @@ export default class ItemList extends Component {
         });
       });
   }
-  //123
 
   renderItems(arr) {
     return arr.map(({id, name}) => {
